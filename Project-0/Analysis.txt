@@ -1,0 +1,101 @@
+A note for a reviewer: for more detailed analysis, please refer to the in-line comments
+
+Task0:
+
+show_first_record(texts):
+    ~ Time complexity O(1).
+    No matter how big input is, the same operation will be executed at constant time.
+    list get item operation is performed at O(1) for both Average and Worst Cases.
+    We access texts items exactly 3 times: O(1*3) -> O(3) or O(1).
+
+    ~ Space complexity O(1).
+    The function does not allocate additional memory at runtime, we extract values in-place,
+    thus it is constant memory order.
+
+show_last_record(calls):
+    ~ Time complexity O(1).
+    No matter how big input is, the same operation will be executed at constant time.
+    list get item operation is performed at O(1) for both Average and Worst Cases.
+    We access texts items exactly 4 times: O(1*4) -> O(4) or O(1).
+
+    ~ Space complexity O(1).
+    The function does not allocate additional memory at runtime, we extract values in-place,
+    thus it is constant memory order.
+
+
+Task1:
+
+show_distinct_numbers(texts, calls):
+    ~ Time complexity O(n).
+    1.We iterate through each input data structure separately,that gives us O(n+n).
+    2.For each loop we perform 4 operations with O(1): Set Add of O(1) and List Get of O(1),
+    3.That results to O(4n + 4n) or O(8n) or (n) linear time complexity.
+
+    ~ Space complexity O(n).
+    We use additional data structure Set to store unique numbers.
+    In the worst case when all records in both input lists are unique, time complexity will be O(n+n) or O(2n) or (n)
+    linear space complexity.
+
+
+Task2:
+
+show_number_spent_longest_time(calls):
+    ~ Time complexity O(n).
+    1. Iterate through list once is O(n).
+    2. For each iteration we perform two times the following:
+    Dict Store operation of O(1*2), Dict Get operation of O(1*2), 3 of List Index operation for O(1*2*3).
+    All can be simplified to O(1).
+    3. Max operation on Dict is O(n), because it takes n lookups to traverse every element in dictionary to find out the max value.
+    The result of all points of complexity analysis is O(n * 1 + n) and simplified to O(n)
+
+    ~ Space complexity O(n).
+    As we use extra data structure as Dict.
+    1. For the worst case we can expect that all numbers are unique in the calls list
+    and the size of numbers Dict will be O(2n) - which is a double size of the input and should be simplified to O(n).
+    2. longest variable stores at most 11 chars that is 11 bytes O(11), also simplified to O(1).
+    The result of point 1 and point 2 is O(n + 1) which is simply O(n).
+
+
+Task3:
+
+extract_code(record):
+    ~ Time complexity O(1).
+    ~ Space complexity O(1).
+    All operations and memory usage are at constant order O(1)
+
+get_area_codes(calls):
+    ~ Time complexity O(n).
+    Iterate through all records in calls list, the best, the avg and the worst estimation is the same as:
+
+    ~ Space complexity O(n).
+    Use additional list to store all area codes called by people with '(080)',
+    if at most every record contains '(080)' area code which is the worst possible case then:
+
+print_percentage_from_to_bangalore(codes):
+    ~ Time complexity O(n).
+    There are the Dict traversal of O(n) for the Counter and the List len, Dict Get operations at O(1)
+
+    ~ Space complexity O(n).
+    Allocated memory space O(n) as we count input list and store it in a Counter object.
+    It is most likely that a Counter Dict size will be less than n, however in the worst case it will be O(n).
+
+
+show_codes_called_in_bangalore(calls):
+    The entire algorithm time complexity is O(n + n + n log n + n + n) ~ O(5n log n) or O(n log n).
+    ~ Time complexity O(n log n).
+    ~ Space complexity O(n + n + n) ~ O(n).
+
+
+Task4:
+
+show_telemarketers_numbers(calls, texts):
+    ~ Time complexity O(n log n).
+    The algorithm performs a few crucial operations such as:
+    loop through calls with O(n), loop through texts with O(n), 4 Set Add with O(1) for every iteration,
+    Set Difference with O(len(incoming_and_texts)), loop through O(len(tele_numbers)), and list sort with O(n log n)
+    Final approximation: O(n + n + n + n log n) ~ O(3n log n)
+
+    ~ Space complexity O(n).
+    Two sets with size of O(n1) and O(n2) respectively, set with result of difference operation with size of O(len(incoming_and_texts)),
+    List with size of O(len(tele_numbers))
+    Final approximation: O(n + n + n) ~ O(3n).
