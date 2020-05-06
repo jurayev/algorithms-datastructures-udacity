@@ -1,6 +1,6 @@
 # Helpers
 class Node:
-    """LinkedListNode class to be used for this problem"""
+    """LinkedListNode class to be used for this problem-2"""
     def __init__(self, data):
         self.data = data
         self.next = None
