@@ -4,6 +4,6 @@ For this problem I used recursion to traverse the active directory hierarchy. Ba
 users list, if no user found check membership in other sub groups.
 
 Complexity analysis:
-* Runtime O(nm), assuming 'n' is the number of groups and 'm' is the number of groups each group has.
-* Space (1), constant space complexity as no additional memory is used
+* `Runtime O(nm)`, assuming 'n' is the number of groups and 'm' is the number of groups each group has.
+* `Space (1)`, constant space complexity as no additional memory is used
 
