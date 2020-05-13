@@ -6,7 +6,7 @@ This repository contains solutions on a series of real-world open ended problems
 * Huffman Compression Algorithm
 * File Recursion
 * Blockchain
-* Searching Algorithms: Binary Search 
+* Searching Algorithms: Binary Search, Depth First Search, Breadth First Search 
 * Sorting Algorithms: Buble sort, Merge sort, Quick sort, Heap sort
 * Faster Divide & Conquer Algorithms
 * Greedy Algorithms
