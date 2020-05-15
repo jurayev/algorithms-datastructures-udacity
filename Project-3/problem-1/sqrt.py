@@ -17,23 +17,18 @@ def sqrt(number):
     Returns:
        int: Floored Square Root
     """
-    half = number // 2
-    possible_range = [_ for _ in range(half+1)]
-    if len(possible_range) == 1:
-        return number
-
-    high = half
+    high = number
     low = 0
     while low <= high:
         mid = (low + high) // 2
-        possible_multiplier = number // possible_range[mid]
-        next_possible_multiplier = possible_multiplier + 1
-        if possible_range[mid] == possible_multiplier or possible_range[mid] == next_possible_multiplier:
-            return possible_multiplier
-        elif possible_range[mid] < possible_multiplier:
-            low = mid + 1
-        else:
+        midsquare = mid * mid
+        next_midsquare = (mid+1) * (mid+1)
+        if midsquare == number or midsquare < number < next_midsquare:
+            return mid
+        elif midsquare > number:
             high = mid - 1
+        else:
+            low = mid + 1
 
 
 print("-"*10, "BEGIN TESTING", "-"*10, "\n")

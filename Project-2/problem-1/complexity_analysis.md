@@ -1,9 +1,8 @@
 
-# Square root of an integer implementation analysis
+# LRU cache implementation
+As the base the ordered dict data structure is used. ordered dict is build using HashTable and LinkedList
+and provides Get, Set, Delete operations at O(1) Runtime complexity
 
-For this problem I used a binary search which produces O(log n) Runtime complexity. For searching sqrt multiplier the algorithm
-divides the input number by half to decrease the search order, and generates the possible range of multipliers.
-
-Complexities:
-* `Runtime O(log n)`, where n is the size of range the search is performed against
-* `Space O(n/2)`, where n is the size of range the search is performed against
+Complexity analysis:
+* `Runtime O(1)`, for both get(key) and set(key, value) operations. _move_front() is O(1) as it uses OrderedDict.move_to_end() under the hood
+* `Space O(n)`, where n is the cache capacity

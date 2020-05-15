@@ -1,10 +1,9 @@
 
-# Dutch national flag problem analysis
+# Active Directory implementation
+For this problem I used recursion to traverse the active directory hierarchy. Base approach is to check membership of
+users list, if no user found check membership in other sub groups.
 
-For this problem single traversal with 3 pointers approach is used. Single traversal is meant to have order of Runtime O(n).
-The sorting is performed in-place, so Space order is O(1).
+Complexity analysis:
+* `Runtime O(nm)`, assuming 'n' is the number of groups and 'm' is the number of groups each group has.
+* `Space (1)`, constant space complexity as no additional memory is used
 
-Complexities:
-
-* `Runtime O(n)`, where n is the input list size
-* `Space O(1)`

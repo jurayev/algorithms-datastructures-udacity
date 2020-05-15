@@ -1,9 +1,20 @@
 
-# Unsorted integer array min max implementation analysis
+# Linked List Union and Intersection implementation
 
-For this problem we traverse the input list and with help of two pointers compare current min/max value and replace the values if needed
-The algorithm finds the solution within single traversal in order of O(n), linear complexity. Requires no additional memory.
+## union
+Complexity analysis for union opearation based on iteration through each node of the llist_1
+for the each node in the llist_2.
 
 Complexities:
-* `Runtime O(n)`, where n is the size of input list
-* `Space O(1)`, no additional memory required
+* `Runtime O(nm)`, assuming 'n' is the size of the llist_1 and 'm' is the size of the llist_2
+* `Space O(nm)`, assuming 'n' is the size of the llist_1 and 'm' is the size of the llist_2, 
+then for the worst case when llist_1 and llist_2 are completely different, we require a new linked list 'nm' sized
+
+## intersection
+Complexity analysis is quite straight forward since we iterate through each node of the llist_1
+for the each node in the llist_2.
+
+Complexities: 
+* `Runtime O(nm)`, assuming 'n' is the size of the llist_1 and 'm' is the size of the llist_2
+* `Space O(n)`, assuming 'n' is the size of the llist_1 and 'n' is the size of the llist_2, 
+then for the worst case when llist_1 and llist_2 are the same, we require a new linked list 'n' sized
