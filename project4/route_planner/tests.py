@@ -1,5 +1,5 @@
-from project4.helpers import load_map_40
-from project4.shortest_path import shortest_path
+from project4.route_planner.helpers import load_map_40
+from project4.route_planner.shortest_path import shortest_path
 
 
 MAP_40_ANSWERS = [
