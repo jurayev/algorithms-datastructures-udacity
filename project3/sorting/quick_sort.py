@@ -1,7 +1,7 @@
 """
 Complexities:
 * Runtime O(n^2)
-* Space O(1), in-place
+* Space O(log n)
 """
 def quicksort(items):
     sort_all(items, 0, len(items) - 1)
