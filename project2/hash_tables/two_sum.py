@@ -1,3 +1,10 @@
+"""
+Complexities:
+
+* Runtime O(n)
+* Space O(n)
+"""
+
 def pair_sum_to_zero(input_list, target):
     cache = {}
     for index, el in enumerate(input_list):
