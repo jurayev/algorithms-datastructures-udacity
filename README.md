@@ -6,7 +6,7 @@ This repository contains solutions on a series of real-world open ended problems
 * Popular programming problems: `LRU Cache`, `Huffman Compression Algorithm`, `File Recursion`, `Blockchain`, `Active Directory`
 * Searching Algorithms: `Binary Search`, `Depth First Search`, `Breadth First Search` 
 * Sorting Algorithms: `Buble sort`, `Merge sort`, `Quick sort`, `Heap sort`
-* Faster Divide & Conquer Algorithms
+* Faster Divide & Conquer Algorithms: `k-th largest element`, `max sum sub-array`
 * Greedy Algorithms
 * Graphs Problem: `Best First Search` a.k.a. `A* Algorithm`
 * Dynamic Programming
