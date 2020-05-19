@@ -29,7 +29,7 @@ def pair_sum(arr, target):
 
 def _test_function(test_case):
     input_list = test_case[0]
-    target =test_case[1]
+    target = test_case[1]
     solution = test_case[2]
     output = pair_sum(input_list, target)
     if output == solution:

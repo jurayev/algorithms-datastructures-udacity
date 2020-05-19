@@ -6,7 +6,7 @@ Space O(n)
 """
 
 def fast_select(arr, k):
-    # Implement the algorithm explained above to find the k^th lasrgest element in the given array
+    # Implement the algorithm explained above to find the k^th largest element in the given array
     n = len(arr)
 
     if 0 < k <= n:
@@ -53,17 +53,17 @@ def find_median(arr):
     return arr[middle]
 
 
-# arr = [6, 80, 36, 8, 23, 7, 10, 12, 42]
-# k = 5
-# print(fast_select(arr, k))        # Outputs 12
-#
-# arr = [5, 2, 20, 17, 11, 13, 8, 9, 11]
-# k = 5
-# print(fast_select(arr, k))        # Outputs 11
-#
-# arr = [6, 80, 36, 8, 23, 7, 10, 12, 42, 99]
-# k = 10
-# print(fast_select(arr, k))        # Outputs 99
+arr = [6, 80, 36, 8, 23, 7, 10, 12, 42]
+k = 5
+print(fast_select(arr, k))        # Outputs 12
+
+arr = [5, 2, 20, 17, 11, 13, 8, 9, 11]
+k = 5
+print(fast_select(arr, k))        # Outputs 11
+
+arr = [6, 80, 36, 8, 23, 7, 10, 12, 42, 99]
+k = 10
+print(fast_select(arr, k))        # Outputs 99
 
 arr = [3,2,1,5,6,4]
 k = 2
