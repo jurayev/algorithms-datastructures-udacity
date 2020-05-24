@@ -12,6 +12,7 @@ This repository contains solutions on a series of real-world open ended problems
 * Dynamic Programming
 
 Disclaimer:
+
 All solutions were implemented myself as a part of Udacity Data Structures & Algorithms Nanodegree: [Certificate](https://confirm.udacity.com/RECED4P).
  
 ## Licence
