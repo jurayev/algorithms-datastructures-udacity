@@ -25,6 +25,11 @@ class Graph(object):
             node1.remove_child(node2)
             node2.remove_child(node1)
 
+    """
+    Complexities:
+    Runtime O(E + V), where E is edges, V is vertices
+    Space O(E + V)
+    """
     def dfs_recursion(self, start_node):
 
         def dfs_recursion(node, visited):
@@ -42,6 +47,11 @@ class Graph(object):
         visited = {}
         dfs_recursion(start_node, visited)
 
+    """
+    Complexities:
+    Runtime O(E + V), where E is edges, V is vertices
+    Space O(E + V)
+    """
     def dfs_iteratively(self, root_node, search_value):
         unvisited = [root_node]
         visited = []
