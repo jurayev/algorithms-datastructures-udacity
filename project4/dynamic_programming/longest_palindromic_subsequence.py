@@ -4,7 +4,6 @@ Complexities:
  * Space O(n^2)
 """
 def lps(input_string):
-    # TODO: Complete this implementation of the LPS function
     # The function should return one value: the LPS length for the given input string
     length = len(input_string)
     match_matrix = create_matrix(len(input_string))
