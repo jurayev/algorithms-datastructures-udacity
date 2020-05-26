@@ -9,7 +9,7 @@ This repository contains solutions on a series of real-world open ended problems
 * Faster Divide & Conquer Algorithms: `k-th largest element`, `max sum sub-array`
 * Greedy Algorithms: `Dijkstras` `Prim's Algorithm`
 * Graphs Problem: `Depth First Search`, `Breadth First Search`, `Best First Search` a.k.a. `A* Algorithm`
-* Dynamic Programming
+* Dynamic Programming: `Knapsack`, `Longest Common Subsequense`, `Longest Palindromic Subsequense`, `The Coin Change`, `Stock Prices`
 
 Disclaimer:
 
